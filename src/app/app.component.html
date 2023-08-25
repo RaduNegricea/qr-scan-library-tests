@@ -1,0 +1,10 @@
+<div class="container">
+  <!-- ngx-scanner-qrcode -->
+  <ngx-scanner-qrcode #action="scanner" [config]="config"></ngx-scanner-qrcode>
+
+  <!-- data  -->
+  <!-- <p class="data">{{ action.data | async | json }}</p> -->
+
+  <!-- loading -->
+  <p *ngIf="action.isLoading">⌛ Loading...</p>
+</div>
